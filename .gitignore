@@ -1,3 +1,46 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+.tmp
+bower_components
+test/bower_components
+.env
+
+# Files injected by scripts/update-env.py:
+/.babelrc
+/.eslintrc
+/.editorconfig
+/.sass-lint.yml
+/.pre-commit-config.yaml
+/scripts/update-env.py
+README-frontend.md
+
+# Test automation
+test/allure-report
+test/allure-results
+test/error-shots
+test/logs
+test/screenshots/diff
+test/screenshots/taken
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # Build and Release Folders
 bin-debug/
 bin-release/
