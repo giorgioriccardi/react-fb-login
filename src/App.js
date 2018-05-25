@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 // Import custom component
-import Facebook_login from './components/Facebook_login';
+import Facebook_custom_login from './components/Facebook_custom_login';
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
           Login with FB.
         </p>
         {/* Render custom component */}
-        <Facebook_login />
+        <Facebook_custom_login />
       </div>
     );
   }

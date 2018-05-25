@@ -33,13 +33,13 @@ When you are ready to deploy to production, create a minified bundle with `npm r
 ## Component Code
 
 * Create a `Components` folder under `./src`
-* Create a `Facebook-login.js` file
+* Create a `Facebook_custom_login.js` file
 * Install [React Facebook Login](https://www.npmjs.com/package/react-facebook-login) 'npm i react-facebook-login'
-* Create a class based component `Facebook-login`
+* Create a class based component `Facebook_custom_login`
 ```
 import React, {Component} from "react";
 
-export default class Facebook-login extends Component {
+export default class Facebook_custom_login extends Component {
   render() {
     return (
       <div>
@@ -48,4 +48,20 @@ export default class Facebook-login extends Component {
     )
   }
 }
+```
+
+* Import custom component in `./App.js`
+```
+import Facebook_custom_login from './components/Facebook_custom_login';
+```
+
+* Add initial state
+```
+state = {
+  isLoggedIn: false,
+  userID: "",
+  name: "",
+  email: "",
+  picture: ""
+};
 ```
