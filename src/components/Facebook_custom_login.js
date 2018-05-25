@@ -20,7 +20,8 @@ export default class Facebook_custom_login extends Component {
     let fbContent;
 
     if (this.state.isLoggedIn) {
-      // do something
+      // set fbContent initial state to null
+      fbContent = null;
     } else {
       fbContent = (
         <FacebookLogin

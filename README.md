@@ -73,7 +73,7 @@ render() {
   let fbContent;
 
   if (this.state.isLoggedIn) {
-    // do something
+    fbContent = null;
   } else {
     fbContent = (
       <FacebookLogin
