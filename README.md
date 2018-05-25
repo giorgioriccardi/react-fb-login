@@ -79,7 +79,9 @@ render() {
       <FacebookLogin
         appId="1234567890"
         autoLoad={true}
-        fields="name,email,picture"
+        fields="name,picture"
+          /* in case you want email or other info: */
+          /* fields="name,email,picture" */
         onClick={this.componentClicked}
         callback={this.responseFacebook}
       />
@@ -106,4 +108,24 @@ componentClicked = () => console.log('clicked');
 return <div>{fbContent}</div>;
 ```
 
-*
+* Put the response into state
+```
+if (this.state.isLoggedIn) {
+  fbContent = (
+    <div
+      style={{
+        width: "30em",
+        margin: "auto",
+        background: "#aeaeae",
+        padding: "2em"
+      }}
+    >
+      <figure>
+          <img src={this.state.picture} alt={this.state.name} />
+          <figcaption>Hello {this.state.name}</figcaption>
+      </figure>
+        {/* In case we render email field as well */}
+        {/* Email: {this.state.email} */}
+    </div>
+  );
+  ```
