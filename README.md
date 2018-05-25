@@ -35,4 +35,17 @@ When you are ready to deploy to production, create a minified bundle with `npm r
 * Create a `Components` folder under `./src`
 * Create a `Facebook-login.js` file
 * Install [React Facebook Login](https://www.npmjs.com/package/react-facebook-login) 'npm i react-facebook-login'
-*
+* Create a class based component `Facebook-login`
+```
+import React, {Component} from "react";
+
+export default class Facebook-login extends Component {
+  render() {
+    return (
+      <div>
+
+      </div>
+    )
+  }
+}
+```
