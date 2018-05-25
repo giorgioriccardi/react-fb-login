@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// Import custom component
+import Facebook_login from './components/Facebook_login';
 
 class App extends Component {
   render() {
@@ -8,11 +10,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">A React FB Login Component</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Login with FB.
         </p>
+        {/* Render custom component */}
+        <Facebook_login />
       </div>
     );
   }
