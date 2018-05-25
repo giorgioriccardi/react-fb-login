@@ -7,7 +7,7 @@ Idea nicked from [https://github.com/keppelen/react-facebook-login](https://gith
 
 #### Initial boilerplate package created with [Create React App](https://github.com/facebook/create-react-app)
 ```
-npx create-react-app react-facebook0login
+npx create-react-app react-fb-login
 cd react-fb-login
 npm start
 ```
@@ -33,5 +33,6 @@ When you are ready to deploy to production, create a minified bundle with `npm r
 ## Component Code
 
 * Create a `Components` folder under `./src`
-* Create a `facebook-login.js` file
+* Create a `Facebook-login.js` file
 * Install [React Facebook Login](https://www.npmjs.com/package/react-facebook-login) 'npm i react-facebook-login'
+*
