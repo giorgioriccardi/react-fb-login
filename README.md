@@ -65,3 +65,45 @@ state = {
   picture: ""
 };
 ```
+
+* Initialize a variable to check if user isLoggedIn
+**Note** Insert your own FB App ID ~~1234567890~~
+```
+render() {
+  let fbContent;
+
+  if (this.state.isLoggedIn) {
+    // do something
+  } else {
+    fbContent = (
+      <FacebookLogin
+        appId="1234567890"
+        autoLoad={true}
+        fields="name,email,picture"
+        onClick={this.componentClicked}
+        callback={this.responseFacebook}
+      />
+    );
+  }
+
+```
+
+**Note**  This is a Class based component so the 2 methods `onClick` and `callback` require this.
+`onClick={this.componentClicked}`
+`callback={this.responseFacebook}`
+
+* Add our methods
+```
+responseFacebook = response => {
+  console.log(response);
+}
+
+componentClicked = () => console.log('clicked');
+```
+
+* and we Return the `fbContent`
+```
+return <div>{fbContent}</div>;
+```
+
+*
