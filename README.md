@@ -129,3 +129,5 @@ if (this.state.isLoggedIn) {
     </div>
   );
   ```
+
+* Further implementation is required to make it working into production!
