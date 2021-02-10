@@ -1,5 +1,6 @@
 {
   "name": "react-fb-login",
+  "homepage": "https://griccardi.com/test/javascript/react-fb-login",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

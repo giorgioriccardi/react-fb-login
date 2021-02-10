@@ -40,7 +40,7 @@ export default class FacebookCustomLogin extends Component {
     } else {
       fbContent = (
         <FacebookLogin
-          appId="1234567890"
+          appId="454893001590113"
           autoLoad={true}
           fields="name,picture,email"
             /* in case you want email or other info: */
